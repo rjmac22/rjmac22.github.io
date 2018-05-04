@@ -1,6 +1,23 @@
   <head>
-    <title>Test Page: Don't Panic</title>
+    {% if page.title %}
+      <title>{{ page.title }} | Test Page</title>
+    {% else %}
+      <title>Test Page: Don't Panic</title>
+    {% endif %}
+
+    {% if page.description %}
+      <meta name="description" content="{{ page.description}}">
+      <meta property="og:title" content="{{ page.description}}" />
+    {% else %}
+      <meta name="description" content="This is a dagerous page">
+      <meta property="og:title" content="This is a dagerous page" />
+    {% endif %}
+
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+    <link rel="stylesheet" href="/fonts/fontawesome-all.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
     <style>

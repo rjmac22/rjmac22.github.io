@@ -1,8 +1,22 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Test Page: Don't Panic</title>
+    
+      <title>Test Page: Don't Panic</title>
+    
+
+    
+      <meta name="description" content="This is a dagerous page">
+      <meta property="og:title" content="This is a dagerous page" />
+    
+
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+    <link rel="stylesheet" href="/fonts/fontawesome-all.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
     <style>
@@ -12,10 +26,21 @@
   <body>
     <header class="header">
   <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label  for="mobile-menu" class="show-mobile-menu">Menu</label>
     <ul class="header-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <span class="drop-trigger" href="/blog">Blog</span>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2016/11/04/title-of-second-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2016/11/03/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
 <li><a href="">Newest Post</a></li>
 
     </ul>
@@ -33,13 +58,19 @@
       <h1>CODE DANGEROUSLY</h1>
       <ul class="social-list">
         <li>
-          <a href="http://example.com/" class="social-link">Fb</a>
+          <a href="https://facebook.com/learnenough" class="social-link">
+            <i class="fab fa-facebook"></i>
+          </a>
         </li>
         <li>
-          <a href="http://example.com/" class="social-link">Tw</a>
+          <a href="https://twitter.com/learnenough" class="social-link">
+             <i class="fab fa-twitter"></i>
+          </a>
         </li>
         <li>
-          <a href="http://example.com/" class="social-link">Gh</a>
+          <a href="https://github.com/learnenough" class="social-link">
+          <i class="fab fa-github"></i>
+          </a>
         </li>
       </ul>
     </div>
@@ -87,7 +118,7 @@
         <div class="post-byline">
           <img src="" alt="">
           <a href=""
-          class="social-link">Tw</a>
+          class="social-link"><i class="fab fa-twitter"></i></a>
           by: Me, Myself, and I
           <span>- November 04, 2016</span>
         </div>
@@ -121,7 +152,7 @@ the spleen and regulating the circulation.</p>
         <img src="http://placekitten.com/g/400/400">
         <h3>Michael Hartl</h3>
         <a href="http://twitter.com/mhartl" class="social-link">
-          Tw
+          <i class="fab fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -145,7 +176,7 @@ the spleen and regulating the circulation.</p>
         <img src="http://placekitten.com/g/400/400">
         <h3>Lee Donahoe</h3>
         <a href="https://twitter.com/leedonahoe" class="social-link">
-          Tw
+          <i class="fab fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -160,7 +191,7 @@ the spleen and regulating the circulation.</p>
         <img src="http://placekitten.com/g/400/400">
         <h3>Nick Merwin</h3>
         <a href="https://twitter.com/nickmerwin" class="social-link">
-          Tw
+          <i class="fab fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -184,7 +215,16 @@ the spleen and regulating the circulation.</p>
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <span class="drop-trigger" href="/blog">Blog</span>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2016/11/04/title-of-second-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2016/11/03/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
 <li><a href="">Newest Post</a></li>
 
     </ul>
